@@ -7,7 +7,6 @@ resource "spotinst_ocean_ecs" "ocean_ecs" {
     max_size                            = var.max_size
     desired_capacity                    = var.desired_capacity
     subnet_ids                          = var.subnet_ids
-    data_integration_id                 = var.data_integration_id
 
     lifecycle {
         ignore_changes = [
